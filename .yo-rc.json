@@ -3,7 +3,7 @@
     "appPath": "app",
     "coffee": false,
     "testFramework": "mocha",
-    "templateFramework": "lodash",
+    "templateFramework": "handlebars",
     "compassBootstrap": true,
     "includeRequireJS": true
   }

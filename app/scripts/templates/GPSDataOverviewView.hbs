@@ -1,0 +1,117 @@
+<form role="form" action="">
+
+	<div class="form-group">
+		<label><span class="glyphicon glyphicon-map-marker"></span> Start GPS</label>
+
+		<div class="input-group">
+			<p class="form-control-static">{{gpsCoords startGPS.latitude}} (lat)<br/>{{gpsCoords startGPS.longitude}} (lon)
+			</p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label><span class="glyphicon glyphicon-flag"></span> End GPS</label>
+
+		<div class="input-group">
+			<p class="form-control-static">{{gpsCoords endGPS.latitude}} (lat)<br/>{{gpsCoords endGPS.longitude}} (lon)
+			</p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+			<input type="date" id="gps-order-date" name="gps-order-date" class="form-control" value="{{orderDate}}"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-plane"></span></span>
+			<input type="date" id="gps-flight-date" name="gps-flight-date" class="form-control" value="{{flightDate}}"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+			<input type="text" id="gps-data-title" name="gps-data-title" class="form-control" value="{{title}}" maxlength="10"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+			<input type="text" id="gps-data-pilot" name="gps-data-pilot" class="form-control" value="{{pilot}}"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-arrow-right"></span></span>
+			<input type="text" id="gps-data-bee-line" name="gps-data-bee-line" class="form-control" value="{{prettyMeters beeLineDistance}}"/>
+			<span class="input-group-addon">m</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-send"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{prettyMeters distance}}"/>
+			<span class="input-group-addon">m</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-chevron-up"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{date startTime}} / {{time startTime}}"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{date endTime}} / {{time endTime}}"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-play"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{durationInMinutes duration}}"/>
+			<span class="input-group-addon">Min.</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-cloud-upload"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{prettyMeters maxElevation}}"/>
+			<span class="input-group-addon">m</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-cloud-download"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{prettyMeters minElevation}}"/>
+			<span class="input-group-addon">m</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-dashboard"></span></span>
+			<input type="text" id="foo" name="foo" class="form-control" value="{{maxSpeed}}"/>
+			<span class="input-group-addon">km/h</span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<button type="button" class="btn btn-primary btn-lg btn-block">Export as *.svg</button>
+	</div>
+
+</form>
+
